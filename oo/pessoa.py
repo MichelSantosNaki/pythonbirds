@@ -8,8 +8,6 @@ if __name__ == '__main__':
     p= Pessoa('Teste') # chama a classe pessoas mandando  a str Teste para nome
     print(p.cumprimentar() )
     #mudando atributos
-    p.nome='Michel' # agora atribuindo a str Michel
+    p.nome='Michel' # agora atribuindo a str Michel.
     print(p.cumprimentar())
-
-
 
