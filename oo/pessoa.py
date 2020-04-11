@@ -1,5 +1,6 @@
 class Pessoa:
-    def __init__(self, nome=None): # atributos
+    def __init__(self, nome=None, idade=27): # atributos
+        self.idade = idade
         self.nome=nome
     def cumprimentar(self):
         return f'Olá Mundo {self.nome}' # se verificar o id de self é o mesmo do p!
@@ -9,5 +10,5 @@ if __name__ == '__main__':
     print(p.cumprimentar() )
     #mudando atributos
     p.nome='Michel' # agora atribuindo a str Michel.
-    print(p.cumprimentar())
+    print(p.cumprimentar(),p.idade)
 
