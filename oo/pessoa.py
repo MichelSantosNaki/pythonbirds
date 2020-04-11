@@ -1,14 +1,21 @@
 class Pessoa:
-    def __init__(self, nome=None, idade=27): # atributos
+    def __init__(self,*filhos, nome=None, idade=27): # atributos
+        self.nome = nome
         self.idade = idade
-        self.nome=nome
+        self.lfi=list(filhos)
+
+
+
     def cumprimentar(self):
         return f'Olá Mundo {self.nome}' # se verificar o id de self é o mesmo do p!
 
 if __name__ == '__main__':
-    p= Pessoa('Teste') # chama a classe pessoas mandando  a str Teste para nome
-    print(p.cumprimentar() )
+    daniele= Pessoa(nome='Daniele') # chama a classe pessoas mandando  a str Teste para nome
+    michel= Pessoa(daniele, nome='Michel')
+    for i in michel.lfi:
+        print(i.nome)
+   # print(cadastro.cumprimentar())
     #mudando atributos
-    p.nome='Michel' # agora atribuindo a str Michel.
-    print(p.cumprimentar(),p.idade)
+    #cadastro.nome= 'Michel' # agora atribuindo a str Michel.
+   # print(cadastro.cumprimentar(), cadastro.idade)
 
