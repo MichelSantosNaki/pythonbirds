@@ -17,8 +17,14 @@ if __name__ == '__main__':
 
     print(daniele.idade, daniele.nome, daniele.lfi[0])
     print(f'o nome é {michel.nome} o sua idade é {michel.idade} anos ')
-   # print(cadastro.cumprimentar())
-    #mudando atributos
-    #cadastro.nome= 'Michel' # agora atribuindo a str Michel.
-   # print(cadastro.cumprimentar(), cadastro.idade)
+    daniele.sobrenome='Stein'
+
+    print(daniele.sobrenome) # adiciona um atributo que nao esta em __init__
+    michel.sobrenome='Santos'
+    print(michel.sobrenome)
+    del michel.sobrenome
+   # del michel.sobrenome apaga um atributo
+    print(daniele.__dict__) # mostra todos atributos de daniele
+    print(michel.__dict__)
+
 
