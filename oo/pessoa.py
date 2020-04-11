@@ -10,10 +10,13 @@ class Pessoa:
         return f'Olá Mundo {self.nome}' # se verificar o id de self é o mesmo do p!
 
 if __name__ == '__main__':
-    daniele= Pessoa(nome='Daniele') # chama a classe pessoas mandando  a str Teste para nome
-    michel= Pessoa(daniele, nome='Michel')
-    for i in michel.lfi:
-        print(i.nome)
+    daniele= Pessoa('livia',nome='Daniele') # chama a classe pessoas mandando  a str Teste para nome
+    michel= Pessoa(daniele, nome='Michel')# daniele vai para filhos
+    for i in michel.lfi: # for chama michel.lfi que contem daniele e toca pra i
+        print(i.nome) #nesse momento i contem daniele e pede pra imprimir daniele.nome
+
+    print(daniele.idade, daniele.nome, daniele.lfi[0])
+    print(f'o nome é {michel.nome} o sua idade é {michel.idade} anos ')
    # print(cadastro.cumprimentar())
     #mudando atributos
     #cadastro.nome= 'Michel' # agora atribuindo a str Michel.
