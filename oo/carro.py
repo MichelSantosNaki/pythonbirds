@@ -24,6 +24,7 @@ O   l
 
 
     Exemplo:
+
     >>> # Testando motor
     >>> motor = Motor()
     >>> motor.velocidade
